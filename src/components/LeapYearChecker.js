@@ -13,6 +13,7 @@ export default function LeapYearChecker() {
       setError("Please enter a valid year.");
       return;
     }
+    
     const parsedYear = parseInt(year);
     const isLeap = (parsedYear % 4 === 0 && parsedYear % 100 !== 0) || parsedYear % 400 === 0;
 
